@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>AI Chat App</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  </head>
+  <body>
+    <div id="banner" class="banner hidden"></div>
+
+    <main class="app">
+      <section id="auth" class="card">
+        <h1>AI Chatbot</h1>
+        <p>Sign up / Log in with username + password.</p>
+        <div class="auth-grid">
+          <input id="username" placeholder="username" />
+          <input id="password" type="password" placeholder="password (min 8 chars)" />
+        </div>
+        <div class="row">
+          <button id="signupBtn">Sign up</button>
+          <button id="loginBtn">Log in</button>
+        </div>
+        <small id="authStatus"></small>
+      </section>
+
+      <section id="chatSection" class="hidden">
+        <aside class="sidebar card">
+          <div class="row between">
+            <strong id="meLabel"></strong>
+            <button id="logoutBtn">Log out</button>
+          </div>
+          <button id="newChatBtn">+ New chat</button>
+          <div id="chatList" class="list"></div>
+
+          <label>Bot personality</label>
+          <textarea id="personality" rows="4"></textarea>
+          <button id="savePersonalityBtn">Save personality</button>
+
+          <section id="adminPanel" class="hidden">
+            <h3>Admin</h3>
+            <textarea id="bannerInput" rows="2" placeholder="Global banner message"></textarea>
+            <button id="setBannerBtn">Set banner</button>
+            <button id="refreshAdminBtn">Refresh security overview</button>
+            <pre id="adminOverview"></pre>
+          </section>
+        </aside>
+
+        <section class="chat card">
+          <div id="messages" class="messages"></div>
+          <div class="row">
+            <textarea id="messageInput" rows="3" placeholder="Write markdown + emojis..."></textarea>
+            <button id="sendBtn">Send</button>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

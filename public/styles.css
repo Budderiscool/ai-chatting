@@ -1,0 +1,23 @@
+:root {
+  font-family: Inter, Arial, sans-serif;
+  color: #f4f4f5;
+  background: #0f172a;
+}
+body { margin: 0; }
+.app { padding: 16px; max-width: 1200px; margin: auto; }
+.card { background: #1e293b; border-radius: 12px; padding: 12px; }
+.hidden { display: none !important; }
+.banner { background: #f59e0b; color: #1f2937; padding: 8px 12px; font-weight: 700; }
+.row { display: flex; gap: 8px; align-items: center; }
+.between { justify-content: space-between; }
+.auth-grid { display: grid; gap: 8px; margin: 10px 0; }
+#chatSection { display: grid; grid-template-columns: 320px 1fr; gap: 12px; margin-top: 12px; }
+.sidebar textarea, .chat textarea, input { width: 100%; background: #0f172a; color: #f8fafc; border: 1px solid #334155; border-radius: 8px; padding: 8px; }
+button { background: #2563eb; color: #fff; border: 0; border-radius: 8px; padding: 8px 10px; cursor: pointer; }
+.list { max-height: 200px; overflow: auto; margin: 8px 0; }
+.list button { width: 100%; text-align: left; margin-bottom: 6px; background: #334155; }
+.messages { min-height: 420px; max-height: 66vh; overflow: auto; background: #0b1220; border-radius: 8px; padding: 10px; margin-bottom: 8px; }
+.msg { border-radius: 10px; padding: 8px; margin-bottom: 8px; }
+.msg.user { background: #1d4ed8; }
+.msg.bot { background: #047857; }
+pre { white-space: pre-wrap; max-height: 220px; overflow: auto; }

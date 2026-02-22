@@ -1,0 +1,23 @@
+{
+  "name": "ai-chatting",
+  "version": "1.0.0",
+  "description": "Koyeb-ready AI chatbot with Supabase auth/chat storage and Gemini responses",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@supabase/supabase-js": "^2.48.1",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "marked": "^15.0.7"
+  }
+}
